@@ -5,7 +5,7 @@ This is a sample Unity3D game for the [HappyFunTimes party games system](http://
 
 ## Install
 
-[Clear here to get it from the unity asset store](http://assetstore.unity3d.com/en/#!/content/19668).
+[Click here to get it from the unity asset store](http://assetstore.unity3d.com/en/#!/content/19668).
 
 ## What is it?
 
