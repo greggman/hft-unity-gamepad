@@ -66,11 +66,20 @@ public class HFTGlobalSoundHelper : MonoBehaviour {
     }
   }
 
+  string ReadAllText(string filename)
+  {
+    using (System.IO.StreamReader sr = new System.IO.StreamReader(filename))
+    {
+      return sr.ReadToEnd();
+    }
+  }
+
   void AddJSFXSounds(string[] filenames)
   {
     foreach(string filename in filenames)
     {
-      string content = System.IO.File.ReadAllText(filename);
+
+      string content = ReadAllText(filename);
       string[] lines = content.Split(s_lineDelims, System.StringSplitOptions.None);
       int lineNo = 0;
       foreach (string lineStr in lines)
